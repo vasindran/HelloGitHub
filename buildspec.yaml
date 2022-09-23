@@ -15,7 +15,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling the Python code...
       - cd /var/www/html
-      - sudo wget  https://raw.githubusercontent.com/vasindran/HelloGitHub/main/TestDemo.html
+      - sudo wget -4 https://raw.githubusercontent.com/vasindran/HelloGitHub/main/TestDemo.html
       - systemctl enable httpd
       - systemctl start httpd
   post_build:
