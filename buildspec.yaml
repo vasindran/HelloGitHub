@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - sudo su -
-      - amazon-linux-extras install epel
+      - sudo amazon-linux-extras install epel
       - yum update -y
       - yum install ansible -y
       - echo "this code will be executed"
