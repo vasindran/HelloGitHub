@@ -3,13 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-    	- sudo su -
-	- amazon-linux-extras install epel
-	- yum update -y
-	- yum install ansible -y
-	- echo "this code will be executed"
-	- yum update -y
-	- yum install -y httpd
+      - yum install epel
+      - yum update -y
+      - yum install ansible -y
+      - echo "this code will be executed"
+      - yum update -y
+      - yum install -y httpd
   build:
     commands:
       - echo Build started on `date`
