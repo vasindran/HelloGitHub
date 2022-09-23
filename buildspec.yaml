@@ -6,9 +6,9 @@ phases:
       - sudo su -
       - sudo amazon-linux-extras install epel
       - yum update -y
-      - yum install ansible -y
-      - echo "this code will be executed"
-      - yum update -y
+#       - yum install ansible -y
+#       - echo "this code will be executed"
+#       - yum update -y
       - yum install -y httpd
   build:
     commands:
@@ -17,7 +17,7 @@ phases:
       - cd /var/www/html
       - sudo wget -4 https://raw.githubusercontent.com/vasindran/HelloGitHub/main/TestDemo.html
       - systemctl enable httpd
-      - systemctl start httpd
+      - sudo systemctl start httpd.service
   post_build:
     commands:
       - echo Build completed on `date`
