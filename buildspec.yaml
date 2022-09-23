@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - sudo curl  https://github.com/vasindran/HelloGitHub/blob/main/TestDemo.html
+      - sudo curl  https://raw.githubusercontent.com/vasindran/HelloGitHub/blob/main/TestDemo.html
       - systemctl enable httpd
       - systemctl start httpd
   post_build:
