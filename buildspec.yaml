@@ -5,6 +5,6 @@ files:
     destination: /web/
 hooks:
   AfterInstall:
-    - location: ./script.sh
+    - location: ./scripts.sh
       timeout: 300
       runas: root
